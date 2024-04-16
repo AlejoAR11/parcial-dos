@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="navbar">
+            <h1>
+                <img id="logo" src="img/Logo1.png" alt="Logo">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></a></li>
+                    <li><a href="contacto.html">carrito</a></a></li>
+                </ul>
+        </section>
+    </header>
+    <main>
+
+        <section class="carrito">
+            <p>Gonorrea
+
+            </p>
+
+        </section>
+        <form action="">
+            <label for="nombreApellido">Nombre y apellido</label>
+            <input type="text" id="nombreApellido" class="input-padre" required>
+
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" class="input-padre" required placeholder="ejemplo@dominio.com">
+
+            <label for="telefono">télefono</label>
+            <input type="tel" id="telefono" class="input-padre" required placeholder="(xx) xxx xxxxxxx">
+
+            <textarea name="mensaje" id="mensaje" cols="55" rows="10" required></textarea>
+
+
+            <fieldset>
+                <legend id="preguntaContacto">¿Cómo te gustaría ser contactado?</legend>
+
+                <label class="checkbx" for="r-email">
+                    <input type="radio" name="contacto" id="r-email">
+                    email
+                </label>
+
+
+                <label for="r-telefono">
+                    <input type="radio" name="contacto" id="r-telefono">
+                    telefono
+                </label>
+
+
+                <label for="r-wpp">
+                    <input type="radio" name="contacto" id="r-wpp" checked>
+                    WhatsApp
+                </label>
+
+
+            </fieldset>
+
+            <fieldset>
+                <section class="horaContacto">
+                    <legend>¿En qué horario prefiere ser atendido?</legend>
+                    <select name="horaContacto" id="">
+
+                        <option value="">Mañana</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noche</option>
+                    </select>
+                </section>
+            </fieldset>
+
+
+            <label for="novedades">¿Quieres recibir novedades?
+                <input type="checkbox" name="" id="novedades" checked></label>
+
+
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h-20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h-20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h-20h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <img src="img/Logo1.png" alt="">
+        <p>© Copyright - A & P Company - 2024</p>
+
+    </footer>
+
+</body>
+
+</html>

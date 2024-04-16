@@ -1,0 +1,132 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+
+}
+
+header {
+    background-color: #292929;
+    padding: 20px, 0px;
+ 
+}
+
+#logo {
+    max-width: 165px;
+    max-height: 165px;
+}
+
+.navbar {
+    display: inline;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-height: 200px;
+    justify-content: center;
+
+}
+nav {
+    position: inherit;
+}
+
+nav ul{
+    position: relative;
+    display: inline;
+ 
+    padding: 10px 10px 0 0;
+    margin:10px 10px 0 0 ;
+
+}
+
+nav li {
+
+    display: inline;
+    margin: 0 0 0 10px;
+    justify-content: center;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #e3e2de;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+
+
+}
+
+nav a:hover {
+    color: #d4fe41;
+}
+
+
+
+
+
+
+/* Estilos de la sección destacados */
+.destacados {
+    position: relative; /* Se añade position relative al contenedor */
+    max-width: 1200px;
+    margin: 20px auto;
+    height: 650px;
+    display: flex;
+}
+
+.destacados > div {
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.p1 {
+    width: 50%;
+    height: 100%;
+    background-color: lightgreen;
+}
+
+.p2,
+.p3 {
+    width: 50%;
+    height: 50%;
+    position: absolute; /* Se añade position absolute a los elementos p2 y p3 */
+}
+
+.p2 {
+    top: 0; /* Se posiciona en la parte superior */
+    left: 0; /* Se posiciona a la izquierda */
+    background-color: lightcoral;
+}
+
+.p3 {
+    bottom: 0; /* Se posiciona en la parte inferior */
+    left: 0; /* Se posiciona a la izquierda */
+    background-color: lightyellow;
+}
+
+
+
+
+
+@media screen and(max-width:440px) {
+    .navbar {
+        position:relative;
+        width: auto;
+
+    }
+    nav{
+        top:200px;
+    }
+
+    nav li {
+
+        display: flex;
+        margin: 0 0 0 10px;
+        
+    
+    }
+
+
+}
