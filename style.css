@@ -134,6 +134,21 @@ footer img {
     font-weight: bold;
 
 }
+.personalizar h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#catalogo h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
 
 .catalogo li:hover h2 {
     font-size: 30px;
