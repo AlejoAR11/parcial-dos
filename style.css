@@ -1,6 +1,7 @@
 /*header y footer*/
 
-body, html {
+body,
+html {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -95,8 +96,6 @@ footer img {
     background-repeat: no-repeat;
     display: inline-block;
     text-align: center;
-    width: 30%;
-    min-height: 450px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 10px 15px;
@@ -109,10 +108,11 @@ footer img {
     transition: 0.5s all;
 }
 
-.catalogo  p {
+.catalogo p {
     margin: 0 auto;
 }
-.catalogo img{
+
+.catalogo img {
     max-height: 320px;
 }
 
@@ -134,7 +134,8 @@ footer img {
     font-weight: bold;
 
 }
-.personalizar h2{
+
+.personalizar h2 {
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
@@ -142,10 +143,11 @@ footer img {
 
 }
 
-#catalogo h2{
+#catalogo h2 {
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 
 }
@@ -284,6 +286,111 @@ p {
 
 
 }
+
+/*Estilos de la sección personalizar */
+
+.personalizar {
+    background-image: url("img/prodBG.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.personalizarLampara li {
+
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-top-width: 8px;
+    border-style: solid;
+    border-radius: 4px;
+    transition: 0.5s all;
+    background-color: #292929;
+    color: #e4e2dd;
+}
+
+.personalizarLampara p {
+    margin: 0 auto;
+}
+
+.personalizarLampara img {
+    max-height: 320px;
+}
+
+.personalizarLampara li:hover {
+    border-color: #d4fe41;
+    -webkit-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.75);
+
+}
+
+.personalizarLampara li:active {
+
+    border-color: green;
+}
+
+.personalizarLampara h2 {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.personalizarLampara h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.personalizarLampara li:hover h2 {
+    font-size: 30px;
+}
+
+.personalizarLampara .detalles {
+    font-size: 15px;
+
+}
+
+.personalizarLampara .valor {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+
+}
+
+
+.opcionesLampara li {
+    background-color: #292929;
+    color: #e4e2dd;
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #292929;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.personalizar fieldset {
+    background-color: #292929;
+    border: none;
+    max-width: 120px;
+}
+
+
 
 @media screen and(max-width:480px) {
 
