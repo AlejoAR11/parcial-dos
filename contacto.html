@@ -32,86 +32,103 @@
     <main>
 
         <section class="carrito">
-            <p>Gonorrea
+            <h1>
+                tus productos
+            </h1>
+            <ul class="catalogo">
+              
+                <li>
+                    <h2>pequeña</h2>
+                   <img src="img/LLD4.png" alt="">
+                    <p class="detalles">
+                    <p class="valor">10$</p>
+                    </p>
+                </li>
+                <li>
+                    <h2>mediana</h2>
+                   <img src="img/LLD4.png" alt="">
+                    <p class="detalles">
+                    <p class="valor">15$</p>
+                    </p>
+                </li>
+                <p>Total: 25</p>
+                <input type="submit" value="vaciar carrito" class="clean">
+                
+            </ul>
 
-            </p>
+
+            <form action="">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombreApellido" class="input-padre" required>
+
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" class="input-padre" required placeholder="ejemplo@dominio.com">
+
+                <label for="telefono">direccion</label>
+                <input type="tel" id="telefono" class="input-padre" required placeholder="calle 123 # 12b 123">
+                <label for="telefono">celular de contacto</label>
+                <input type="tel" id="telefono" class="input-padre" required placeholder="(xx) xxx xxxxxxx">
+
+
+
+
+                <fieldset>
+                    <legend id="preguntaContacto">¿Metodo de pago?</legend>
+
+                    <label class="checkbx" for="r-tarjetaCredito">
+                        <input type="radio" name="contacto" id="r-email">
+                        Tarjeta de credito
+                    </label>
+
+
+                    <label for="r-telefono">
+                        <input type="radio" name="contacto" id="r-cuentaAhorro">
+                        Cuenta de ahorro
+                    </label>
+
+                </fieldset>
+
+               
+
+                <label for="novedades">¿Quieres guardar tu información para una futura compra?
+                    <input type="checkbox" name="" id="novedades" checked></label>
+
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
 
         </section>
-        <form action="">
-            <label for="nombreApellido">Nombre y apellido</label>
-            <input type="text" id="nombreApellido" class="input-padre" required>
 
-            <label for="email">Correo electronico</label>
-            <input type="email" id="email" class="input-padre" required placeholder="ejemplo@dominio.com">
-
-            <label for="telefono">télefono</label>
-            <input type="tel" id="telefono" class="input-padre" required placeholder="(xx) xxx xxxxxxx">
-
-            <textarea name="mensaje" id="mensaje" cols="55" rows="10" required></textarea>
-
-
-            <fieldset>
-                <legend id="preguntaContacto">¿Cómo te gustaría ser contactado?</legend>
-
-                <label class="checkbx" for="r-email">
-                    <input type="radio" name="contacto" id="r-email">
-                    email
-                </label>
-
-
-                <label for="r-telefono">
-                    <input type="radio" name="contacto" id="r-telefono">
-                    telefono
-                </label>
-
-
-                <label for="r-wpp">
-                    <input type="radio" name="contacto" id="r-wpp" checked>
-                    WhatsApp
-                </label>
-
-
-            </fieldset>
-
-            <fieldset>
-                <section class="horaContacto">
-                    <legend>¿En qué horario prefiere ser atendido?</legend>
-                    <select name="horaContacto" id="">
-
-                        <option value="">Mañana</option>
-                        <option value="">Tarde</option>
-                        <option value="">Noche</option>
-                    </select>
-                </section>
-            </fieldset>
-
-
-            <label for="novedades">¿Quieres recibir novedades?
-                <input type="checkbox" name="" id="novedades" checked></label>
-
-
-            <input type="submit" value="Enviar" class="enviar">
-        </form>
 
         <table>
+            <caption>Envios</caption>
             <thead>
                 <tr>
-                    <th>Día</th>
-                    <th>Horario</th>
+                    <th>Ciudad</th>
+                    <th>Costo</th>
+                    <th>Tiempo estimado</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Lunes</td>
-                    <td>08h-20h</td>
+                    <td>Bogotá</td>
+                    <td>7500</td>
+                    <td>2 días habiles</td>
                 </tr>
                 <tr>
-                    <td>Miercoles</td>
-                    <td>08h-20h</td>
+                    <td>Cali</td>
+                    <td>7500</td>
+                    <td>2 días habiles</td>
                 </tr>
                 <tr>
-                    <td>Viernes</td>
-                    <td>08h-20h</td>
+                    <td>Medellín</td>
+                    <td>6000</td>
+                    <td>1 día habil</td>
+                </tr>
+                <tr>
+                    <td>Otras ciudades</td>
+                    <td>15000</td>
+                    <td>5 días habiles</td>
                 </tr>
             </tbody>
         </table>

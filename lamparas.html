@@ -1,107 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
-</head>
-
-<body>
-
-    <header>
-        <section class="navbar">
-            <h1>
-                <img id="logo" src="img/Logo1.png" alt="Logo">
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></a></li>
-                    <li><a href="contacto.html">carrito</a></a></li>
-                    <li><a href="lamparas.html">Personalizar</a></li>
-                    
-                </ul>
-
-            </nav>
-        </section>
-    </header>
-
-    <section class="personalizar">
-
-        <ul class="personalizarLampara">
-            <li class="">
-                <h2>pequeña</h2>
-                <a href="/lamparas.html"><img src="img/LLD4.png" alt=""></a>
-                <p class="detalles">
-                <p class="valor">10$</p>
-                </p>
-                <h2>subir imagen</h2>
-            </li>
-
-            <div class="opciones">
-
-                <ul class="opcionesLampara">
-                    <li>Tamaño
-                        <fieldset>
-                            <section class="horaContacto">
-                                <select name="horaContacto" id="">
-
-                                    <option value="">pequeño 5$</option>
-                                    <option value="">mediano $10</option>
-                                    <option value="">Grande $15</option>
-                                </select>
-                            </section>
-                        </fieldset>
-
-                    </li>
-                    <li>Color
-                        <fieldset>
-                            <section class="horaContacto">
-                                <select name="horaContacto" id="">
-
-                                    <option value="">azul</option>
-                                    <option value="">blanco</option>
-                                    <option value="">multi color</option>
-                                </select>
-                            </section>
-                        </fieldset>
-                    </li>
-                    <li>Base
-                        <fieldset>
-                            <section class="horaContacto">
-                                <select name="horaContacto" id="">
-
-                                    <option value="">madera</option>
-                                    <option value="">plástico</option>
-
-                                </select>
-                            </section>
-                        </fieldset>
-
-                    </li>
-                </ul>
-
-            </div>
-
-    </section>
-
-
-
-    <footer>
-        <img src="img/Logo1.png" alt="">
-        <p>© Copyright - A & P Company - 2024</p>
-
-    </footer>
-
-</body>
-
-=======
 <!DOCTYPE html>
 <html lang="es">
 
@@ -127,7 +23,7 @@
                     <li><a href="productos.html">Productos</a></a></li>
                     <li><a href="contacto.html">carrito</a></a></li>
                     <li><a href="lamparas.html">Personalizar</a></li>
-                    
+
                 </ul>
 
             </nav>
@@ -143,7 +39,10 @@
                 <p class="detalles">
                 <p class="valor">10$</p>
                 </p>
-                <h2>subir imagen</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <input type="file" id="fileInput" name="fileInput" style="display: none;">
+                    <h2 id="fileLabel">subir imagen</h2>
+                </form>
             </li>
 
             <div class="opciones">
@@ -201,7 +100,7 @@
 
     </footer>
 
+    <script src="./App.js"></script>
 </body>
 
->>>>>>> 46fc7a5cde2ef4ca4e7eae01deefa9df240156f1
 </html>
